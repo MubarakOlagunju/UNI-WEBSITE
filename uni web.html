@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<title>UNIVERSITY WEBSITE</title>
+<link rel="icon" href="pic_bulboff.gif">
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(3,4,30,0.7),rgba(3,4,30,0.7)),url(background.jpg);
+	position: relative;
+	background-size: cover;
+	background-position: space-between;
+}
+nav{
+	items-align: center;
+	padding: 2px 6px;
+	flex: left;
+	justify-content: space-between;
+}
+nav img{
+	width: 150px;
+	
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-size: 13px	
+}
+.nav-links ul li::after{
+	height: 2px;
+	width: 0px;
+	transition: 0.5s;
+	display: block;
+	content: "";
+	background-color: gold;
+	margin: auto;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	text-align: center;
+	color: white;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+.text-box h1{
+	font-size: 64px;
+	text-align: center;
+}
+.text-box p{
+	text-align: center;
+	font-size: 22px;
+	margin: 10px 0 40px;
+	color: white;
+}
+.btn{
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 30px;
+	border: 1px solid green;
+	background: transparent;
+	color: white;
+	cursor: pointer;
+	font-size: 13px;
+	position: relative;
+}
+.btn:hover{
+	border: 1px solid green;
+	background: gold;
+	transition: 1s;
+}	
+
+@media(max-width: 700px){
+	.text-box h1{
+	font-size: 30px;
+	}
+	.text-box p{
+	font-size: 13px;
+	}
+	.nav-links ul li{
+	display: block;
+	}
+	.nav-links{
+	background: red;
+	top: 0;
+	height: 100vh;
+	width: 200px;
+	z-index: 2;
+	text-align: left;
+	position: absolute;
+	transition: 1s;
+	right: 0px;
+	}
+	.nav-links ul{
+	padding: 40px;
+	}
+}
+
+/*-------------------- Course -------------------*/
+.course{
+	width: 80%;
+	heiffght: 90vh;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 34px;
+	font-weight: 600;
+}
+p{
+	font-size: 15px;
+	font-weight: 300;
+	color: blue;
+	padding: 10px;
+	line-height: 20px;
+}
+.row{
+	margin: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.course-col{
+	flex-basis: 31%;
+	background: pink;
+	margin-bottom: 5%;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 20px 12px;
+	transition: 0.5s;
+}
+h3{
+	text-align: center;
+	font-weight: 300;
+	margin: 10px
+}
+.course-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+}
+@media(max-width: 700px){
+	.row{
+	  flex-direction: column;
+	}
+}
+</style>
+</head>
+
+<body>
+  <section class="header">
+  <nav>
+    <a href=""><img src="logo.png"></a>
+	<div class="nav-links">
+	  <ul>
+ 	    <li><a href="">HOME</a></li>
+	    <li><a href="">COURSE</a></li>
+	    <li><a href="">ADMISSION</a></li>
+	    <li><a href="">LIBRARY</a></li>
+	    <li><a href="">STUDENT</a></li>
+ 	  </ul>
+	 </div>
+	 <div class="text-box">
+	  <h1>NIGERIA UNIVERSITY</h1>
+ 	  <p>This University is the Best in Nigeria with standard educational facilities</p>
+	  <a href="" class="btn">visit for more info</a>
+	 </div>
+  </nav>
+  </section>
+
+<!--------------------- Course ------------------>
+<section class="course">
+	<h1>Courses we Offer</h1>
+	<p> We offer different courses, shibilishabala we ready for you</p>
+	
+	<div class="row">
+	  <div class="course-col">
+	    <h3>Intermediate</h3>
+	     <p>as a beginner you learn lot of things ahlk;ja  wok dkwuk skhk kaheka eulhs aheo sjas  jkw oeiej sjlkaje hjakj jekj kjsdhhal euiuwikj</P>
+	  </div>
+	  <div class="course-col">
+	    <h3>Degree</h3>
+	     <p>as a beginner you learn lot of things ahlk;ja  wok dkwuk skhk kaheka eulhs aheo sjas  jkw oeiej sjlkaje hjakj jekj kjsdhhal euiuwikj</P>
+	  </div>
+	  <div class="course-col">
+	    <h3>Postgraduate</h3>
+	     <p>as a beginner you learn lot of things ahlk;ja  wok dkwuk skhk kaheka eulhs aheo sjas  jkw oeiej sjlkaje hjakj jekj kjsdhhal euiuwikj</P>
+	  </div>
+	</div>
+</section>
+</body>
+</html>
